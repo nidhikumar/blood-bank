@@ -8,6 +8,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'login.dart';
 import 'donate.dart';
 import 'nearbyHospitals.dart';
+import 'package:blood_bank/ui/hospital_addevents.dart';
+import 'package:blood_bank/ui/displayevents.dart';
+
 
 class WelcomePage extends StatelessWidget {
   @override
@@ -58,10 +61,29 @@ class WelcomePage extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => NearbyHospitalsPage()),
+                  MaterialPageRoute(builder: (context) => FindNearbyHospital()),
                 );
               },
             ),
+            ListTile(
+              title: Text('Add Hospital Events'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HospitalAddEventsPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Hospital Events'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DisplayEventsPage()),
+                );
+              },
+            ),
+
             ListTile(
               title: Text('Stats & Facts'),
               onTap: () {

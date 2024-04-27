@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'donorList.dart';
 import 'signup.dart';
 import 'welcome.dart';
 
@@ -46,7 +47,7 @@ class HospitalLoginPage extends StatelessWidget {
                     if (hospitalData.docs.isNotEmpty) {
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (context) => WelcomePage()),
+                        MaterialPageRoute(builder: (context) => DonorListScreen()), // Navigate to DonorListScreen only for hospitals
                       );
                     } else {
                       showDialog(
