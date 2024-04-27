@@ -5,12 +5,11 @@ import 'package:blood_bank/ui/statsAndFacts.dart';
 import 'package:blood_bank/ui/updateProfile.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'login.dart';
 import 'donate.dart';
-import 'nearbyHospitals.dart';
-import 'package:blood_bank/ui/hospital_addevents.dart';
-import 'package:blood_bank/ui/displayevents.dart';
-
+import 'hospital_addevents.dart';
+import 'login.dart';
+import 'displayevents.dart';
+import 'nearbyHospitals.dart'; // Import DisplayEventsPage
 
 class WelcomePage extends StatelessWidget {
   @override
@@ -83,7 +82,6 @@ class WelcomePage extends StatelessWidget {
                 );
               },
             ),
-
             ListTile(
               title: Text('Stats & Facts'),
               onTap: () {
@@ -114,9 +112,7 @@ class WelcomePage extends StatelessWidget {
           ],
         ),
       ),
-      body: Center(
-        child: Text('Welcome!'),
-      ),
+      body: DisplayEventsPage(), // Display DisplayEventsPage as the body
     );
   }
 }
