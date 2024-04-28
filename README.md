@@ -2,6 +2,7 @@
 
 Team Members :
 Hari Krishnan Raj Kumar, Lakshmi KS, Nidhi Kumar, Shristi Shrivastava
+Please check Checkpoint 2 - Simple Prototype.pdf for List of features needed for the MVP + Breakdown of tasks & Mapping between features and value(s) to be delivered by your app (justification)
 
 The below screenshots show our UI / UX with data pulled from firebase, Navigation and event based actions:
 The below image is the signup screen for donors:
