@@ -29,6 +29,10 @@ The below shows what the user can see after clicking the map icon:
 
 <img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/15.png" width="300">
 
+The below shows the Edit profile page for donor:
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/16.png" width="300">
+
 The below screen is used by hospitals to create a new event:
 
 <img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/3.png" width="300">
