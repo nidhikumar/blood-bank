@@ -17,13 +17,17 @@ If the login is invalid : invalid login event, it shows the below:
 
 <img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/10.png" width="300">
 
+The below are the options provided in slider:
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/14.png" width="300">
+
 The below is the nearby hospitals screen for donors:
 
 <img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/2.png" width="300">
 
-The below are the options provided in slider:
+The below shows what the user can see after clicking the map icon:
 
-<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/14.png" width="300">
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/15.png" width="300">
 
 The below screen is used by hospitals to create a new event:
 
