@@ -70,7 +70,7 @@ The below image shows all previous donations:
 
 <img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/9.png" width="300">
 
-The below image is the homepage for all hospitals, it shows all donors, the user can filter based on blood group.
+The below image is the homepage for all hospitals, it shows all donors, the user can filter based on blood group. It is an event based action.
 
 <img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/11.png" width="300">
 
