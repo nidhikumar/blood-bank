@@ -9,6 +9,10 @@ The below image is the signup screen for donors:
 
 <img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/12.png" width="300">
 
+The below is the signup screen for hospitals:
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/13.png" width="300">
+
 The below is the log in screen for hospitals:
 
 <img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/18.png" width="300">
@@ -17,9 +21,6 @@ The below is the log in screen for donors:
 
 <img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/17.png" width="300">
 
-The below is the signup screen for hospitals:
-
-<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/13.png" width="300">
 
 If the login is invalid : invalid login event, it shows the below:
 
