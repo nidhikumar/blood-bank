@@ -7,32 +7,43 @@ Please check Checkpoint 2 - Simple Prototype.pdf for List of features needed for
 The below screenshots show our UI / UX with data pulled from firebase, Navigation and event based actions:
 The below image is the signup screen for donors:
 
-![alt text](https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/12.png)
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/12.png" width="300">
 
 The below is the signup screen for hospitals:
-![alt text](https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/13.png)
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/13.png" width="300">
 
 If the login is invalid : invalid login event, it shows the below:
-![alt text](https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/10.png)
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/10.png" width="300">
 
 The below is the nearby hospitals screen for donors:
-![alt text](https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/2.png)
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/2.png" width="300">
 
 The below screen is used by hospitals to create a new event:
-![alt text](https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/3.png)
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/3.png" width="300">
 
 The below screen is used by donors to see nearby events:
-![alt text](https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/4.png)
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/4.png" width="300">
 
 The below is the financial donation screen:
-![alt text](https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/7.png)
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/7.png" width="300">
+
 Once the button in the above is done and if its succesfull based on the event trigger for donate it shows the below:
-![alt text](https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/8.png)
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/8.png" width="300">
 
 The below image shows all previous donations:
-![alt text](https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/9.png)
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/9.png" width="300">
+
 The below image is the homepage for all hospitals, it shows all donors, the user cna filter based on blood group.
-![alt text](https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/11.png)
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/11.png" width="300">
 
 Readme file of previous checkpoint, the above are the updates:
 
