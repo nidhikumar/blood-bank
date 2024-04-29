@@ -46,6 +46,14 @@ The below screen is used by hospitals to create a new event:
 
 <img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/3.png" width="300">
 
+The below screen is used by hospitals to request for blood:
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/19.png" width="300">
+
+The below screen is used by hospitals to filter by blood group:
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/20.png" width="300">
+
 The below screen is used by donors to see nearby events:
 
 <img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/4.png" width="300">
@@ -62,7 +70,7 @@ The below image shows all previous donations:
 
 <img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/9.png" width="300">
 
-The below image is the homepage for all hospitals, it shows all donors, the user cna filter based on blood group.
+The below image is the homepage for all hospitals, it shows all donors, the user can filter based on blood group.
 
 <img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/11.png" width="300">
 
