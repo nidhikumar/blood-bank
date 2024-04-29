@@ -21,6 +21,10 @@ The below is the nearby hospitals screen for donors:
 
 <img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/2.png" width="300">
 
+The below are the options provided in slider:
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/14.png" width="300">
+
 The below screen is used by hospitals to create a new event:
 
 <img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/3.png" width="300">
