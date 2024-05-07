@@ -1,6 +1,6 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 import 'displayevents.dart';
@@ -24,75 +24,6 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
       ),
       home: DonorListScreen(),
-    );
-  }
-
-  Drawer buildDrawer(BuildContext context) {
-    return Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          DrawerHeader(
-            decoration: BoxDecoration(
-              color: Colors.blue,
-            ),
-            child: Text(
-              'Menu',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
-              ),
-            ),
-          ),
-          ListTile(
-            title: Text('Add Hospital Events'),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => HospitalAddEventsPage()),
-              );
-            },
-          ),
-          ListTile(
-            title: Text('Hospital Events'),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => DisplayEventsPage()),
-              );
-            },
-          ),
-          ListTile(
-            title: Text('Previous Donations'),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => PreviousDonationsPage()),
-              );
-            },
-          ),
-          ListTile(
-            title: Text('Donate'),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => DonationsPage(source: DonationSource.Hospital)),
-              );
-            },
-          ),
-          ListTile(
-            title: Text('Logout'),
-            onTap: () async {
-              await FirebaseAuth.instance.signOut();
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(builder: (context) => DonorLoginPage()),
-              );
-            },
-          ),
-          // Add more ListTile widgets for other sidebar items
-        ],
-      ),
     );
   }
 }
@@ -162,7 +93,81 @@ class _DonorListScreenState extends State<DonorListScreen> {
           ),
         ],
       ),
-      drawer: MyApp().buildDrawer(context), // Using the Drawer from MyApp
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text(
+                'Menu',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text('Request Blood Donation'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RequestBloodDonationScreen()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Add Hospital Events'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HospitalAddEventsPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Hospital Events'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DisplayEventsPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Previous Donations'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => PreviousDonationsPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Donate'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DonationsPage(source: DonationSource.Hospital)),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Logout'),
+              onTap: () async {
+                await FirebaseAuth.instance.signOut();
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => DonorLoginPage()),
+                );
+              },
+            ),
+            // Add more ListTile widgets for other sidebar items
+          ],
+        ),
+      ),
       body: StreamBuilder<QuerySnapshot>(
         stream: donorStream,
         builder: (context, snapshot) {
@@ -210,6 +215,16 @@ class _DonorListScreenState extends State<DonorListScreen> {
                   },
                 ),
               ),
+              ElevatedButton(
+                onPressed: () {
+                  // Navigate to the RequestBloodDonationScreen
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => RequestBloodDonationScreen()),
+                  );
+                },
+                child: Text('Request Blood Donations'),
+              ),
             ],
           );
         },
@@ -223,5 +238,192 @@ class _DonorListScreenState extends State<DonorListScreen> {
     } else {
       return donors.where((donor) => donor.bloodGroup == selectedBloodGroup).toList();
     }
+  }
+}
+
+class RequestBloodDonationScreen extends StatefulWidget {
+  @override
+  _RequestBloodDonationScreenState createState() => _RequestBloodDonationScreenState();
+}
+
+class _RequestBloodDonationScreenState extends State<RequestBloodDonationScreen> {
+  final _formKey = GlobalKey<FormState>();
+  String _bloodGroup = 'A+'; // Set a valid default value
+  String _quantity = '';
+  String _additionalInfo = '';
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Request Blood Donation'),
+      ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text(
+                'Menu',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text('Donor List'),
+              onTap: () {
+                Navigator.pop(context); // Close the drawer
+                // Navigate to the DonorListScreen
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DonorListScreen()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Add Hospital Events'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HospitalAddEventsPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Hospital Events'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DisplayEventsPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Previous Donations'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => PreviousDonationsPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Donate'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DonationsPage(source: DonationSource.Donor)),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Logout'),
+              onTap: () async {
+                await FirebaseAuth.instance.signOut();
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => DonorLoginPage()),
+                );
+              },
+            ),
+            // Add more ListTile widgets for other sidebar items
+          ],
+        ),
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(16),
+        child: Form(
+          key: _formKey,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              DropdownButtonFormField<String>(
+                value: _bloodGroup,
+                items: [
+                  'A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'
+                ].map((bloodGroup) => DropdownMenuItem(
+                  value: bloodGroup,
+                  child: Text(bloodGroup),
+                )).toList(),
+                onChanged: (value) {
+                  setState(() {
+                    _bloodGroup = value!;
+                  });
+                },
+                decoration: InputDecoration(labelText: 'Blood Group'),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please select a blood group';
+                  }
+                  return null;
+                },
+              ),
+              TextFormField(
+                decoration: InputDecoration(labelText: 'Quantity'),
+                onChanged: (value) {
+                  _quantity = value;
+                },
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter a quantity';
+                  }
+                  return null;
+                },
+              ),
+              TextFormField(
+                decoration: InputDecoration(labelText: 'Additional Information'),
+                onChanged: (value) {
+                  _additionalInfo = value;
+                },
+                validator: (value) {
+                  // Optional field, no validation needed
+                  return null;
+                },
+              ),
+              SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: () async {
+                  if (_formKey.currentState!.validate()) {
+                    // The form is valid, proceed with submission
+                    try {
+                      // Create a reference to the Firestore collection 'donation_requests'
+                      CollectionReference donationRequests = FirebaseFirestore.instance.collection('donation_requests');
+
+                      // Add a new document to the collection with the form data
+                      await donationRequests.add({
+                        'bloodGroup': _bloodGroup,
+                        'quantity': _quantity,
+                        'additionalInfo': _additionalInfo,
+                        'timestamp': FieldValue.serverTimestamp(), // Optional: Add a timestamp to track when the request was made
+                      });
+
+                      // Show a success message to the user
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text('Blood donation request submitted!')),
+                      );
+
+                      // Optionally, navigate back to the previous screen
+                      Navigator.pop(context);
+                    } catch (e) {
+                      // Handle errors that may occur during data submission
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text('Error: Could not submit request')),
+                      );
+                      print('Error submitting request: $e');
+                    }
+                  }
+                },
+                child: Text('Submit Request'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
