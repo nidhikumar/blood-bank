@@ -42,7 +42,7 @@ class DonorLoginPage extends StatelessWidget {
                     );
 
                     // Check if the logged-in user is a donor
-                    QuerySnapshot donorData = await FirebaseFirestore.instance.collection('users').where('email', isEqualTo: emailController.text).get();
+                    QuerySnapshot donorData = await FirebaseFirestore.instance.collection('donor_list').where('email', isEqualTo: emailController.text).get();
 
                     if (donorData.docs.isNotEmpty) {
                       Navigator.pushReplacement(

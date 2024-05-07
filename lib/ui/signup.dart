@@ -72,6 +72,11 @@ class _SignupPageState extends State<SignupPage> {
                   ),
                   SizedBox(height: 10),
                   TextField(
+                    controller: addressController,
+                    decoration: InputDecoration(labelText: 'Address'),
+                  ),
+                  SizedBox(height: 10),
+                  TextField(
                     controller: ageController,
                     decoration: InputDecoration(labelText: 'Age'),
                     keyboardType: TextInputType.number,
@@ -118,12 +123,13 @@ class _SignupPageState extends State<SignupPage> {
                       );
 
                       // Save donor info to Firestore
-                      await FirebaseFirestore.instance.collection('users').add({
+                      await FirebaseFirestore.instance.collection('donor_list').add({
                         'email': emailController.text,
                         'name': nameController.text,
                         'age': int.parse(ageController.text),
-                        'blood_group': bloodGroupController.text,
-                        'phone_number': phoneNumberController.text,
+                        'bloodGroup': bloodGroupController.text,
+                        'phoneNumber': phoneNumberController.text,
+                        'address': addressController.text,
                       });
 
                       // Navigate to login page after successful signup

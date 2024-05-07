@@ -105,7 +105,7 @@ class WelcomePage extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => DonationsPage()),
+                  MaterialPageRoute(builder: (context) => DonationsPage(source: DonationSource.Donor)), // Pass the source as DonationSource.Donor
                 );
               },
             ),

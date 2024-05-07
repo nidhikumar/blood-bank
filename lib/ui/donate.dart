@@ -2,7 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+// Define an enum to represent the source of the donation
+enum DonationSource {
+  Donor,
+  Hospital,
+}
+
 class DonationsPage extends StatefulWidget {
+  final DonationSource source; // Add a parameter to identify the source
+
+  // Constructor to initialize the source parameter
+  const DonationsPage({Key? key, required this.source}) : super(key: key);
+
   @override
   _DonationsPageState createState() => _DonationsPageState();
 }
@@ -73,10 +84,22 @@ class _DonationsPageState extends State<DonationsPage> {
       }
 
       User? user = FirebaseAuth.instance.currentUser;
+      String? userName;
       if (user != null) {
         // Fetch user data from Firestore
-        var userSnapshot = await FirebaseFirestore.instance.collection('users').doc(user.uid).get();
-        var userName = userSnapshot['name'];
+        var userSnapshot;
+        if (widget.source == DonationSource.Donor) {
+          userSnapshot = await FirebaseFirestore.instance.collection('donor_list').doc(user.uid).get();
+          userName = userSnapshot['name'];
+        } else {
+          userSnapshot = await FirebaseFirestore.instance.collection('hospital_info').doc(user.uid).get();
+          // Check if the field "hospital_name" exists before accessing it
+          if (userSnapshot.exists && userSnapshot.data()!.containsKey('hospital_name')) {
+            userName = userSnapshot['hospital_name'];
+          } else {
+            userName = 'Hospital'; // Default value if "hospital_name" doesn't exist
+          }
+        }
 
         // Prepare donation data
         var donationData = {
@@ -97,7 +120,7 @@ class _DonationsPageState extends State<DonationsPage> {
           builder: (context) {
             return AlertDialog(
               title: Text('Thank you for donating'),
-              content: Text('Thank you for donating us $userName'),
+              content: Text('Thank you for donating to us, $userName'),
               actions: [
                 TextButton(
                   onPressed: () {
