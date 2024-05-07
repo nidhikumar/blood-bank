@@ -34,7 +34,10 @@ class DisplayEventsPage extends StatelessWidget {
                 return SizedBox.shrink();
               }
 
-              String formattedDate = DateFormat('yyyy-MM-dd – kk:mm').format(eventDate);
+              String formattedDate = DateFormat('d MMM yyyy').format(eventDate);
+              String formattedDay = DateFormat('EEEE').format(eventDate);
+              String formattedStartTime = DateFormat('h:mm a').format(eventDate);
+              String formattedEndTime = DateFormat('h:mm a').format(eventDate.add(Duration(hours: 3)));
 
               return Card(
                 margin: EdgeInsets.all(8),
@@ -42,8 +45,15 @@ class DisplayEventsPage extends StatelessWidget {
                   leading: Icon(Icons.event),
                   title: Text(data['title'] ?? 'No Title'),
                   subtitle: Text(data['description'] ?? 'No Description'),
-                  trailing: Text(formattedDate),
+                  trailing: Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text('$formattedDate ($formattedDay)'),
+                      Text('$formattedStartTime - $formattedEndTime'),
+                    ],
+                  ),
                   onTap: () {
+                    // Add onTap functionality here if needed
                   },
                 ),
               );
