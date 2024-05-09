@@ -1,0 +1,18 @@
+"/Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/Codable/DocumentReference+ReadDecodable.swift":
+  swift-dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/DocumentReference+ReadDecodable.swiftdeps"
+  const-values: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/DocumentReference+ReadDecodable.swiftconstvalues"
+  object: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/DocumentReference+ReadDecodable.o"
+  dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/DocumentReference+ReadDecodable.d"
+  diagnostics: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/DocumentReference+ReadDecodable.dia"
+"/Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/Codable/DocumentReference+WriteEncodable.swift":
+  swift-dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/DocumentReference+WriteEncodable.swiftdeps"
+  diagnostics: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/DocumentReference+WriteEncodable.dia"
+  object: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/DocumentReference+WriteEncodable.o"
+  const-values: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/DocumentReference+WriteEncodable.swiftconstvalues"
+  dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/DocumentReference+WriteEncodable.d"
+"/Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/Codable/DocumentSnapshot+ReadDecodable.swift":
+  swift-dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/DocumentSnapshot+ReadDecodable.swiftdeps"
+  object: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/DocumentSnapshot+ReadDecodable.o"
+  dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/DocumentSnapshot+ReadDecodable.d"
+  diagnostics: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/DocumentSnapshot+ReadDecodable.dia"
+  const-values: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/DocumentSnapshot+ReadDecodable.swiftconstvalues"

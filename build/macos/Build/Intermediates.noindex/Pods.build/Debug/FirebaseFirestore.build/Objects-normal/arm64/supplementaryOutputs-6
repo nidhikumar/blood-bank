@@ -1,0 +1,18 @@
+"/Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/Codable/ServerTimestamp.swift":
+  const-values: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/ServerTimestamp.swiftconstvalues"
+  dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/ServerTimestamp.d"
+  object: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/ServerTimestamp.o"
+  swift-dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/ServerTimestamp.swiftdeps"
+  diagnostics: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/ServerTimestamp.dia"
+"/Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/Codable/GeoPoint+Codable.swift":
+  const-values: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/GeoPoint+Codable.swiftconstvalues"
+  diagnostics: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/GeoPoint+Codable.dia"
+  object: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/GeoPoint+Codable.o"
+  swift-dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/GeoPoint+Codable.swiftdeps"
+  dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/GeoPoint+Codable.d"
+"/Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/PropertyWrapper/QueryPredicate.swift":
+  const-values: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/QueryPredicate.swiftconstvalues"
+  swift-dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/QueryPredicate.swiftdeps"
+  object: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/QueryPredicate.o"
+  dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/QueryPredicate.d"
+  diagnostics: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/QueryPredicate.dia"

@@ -1,0 +1,18 @@
+"/Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/Codable/CodableErrors.swift":
+  diagnostics: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/CodableErrors.dia"
+  const-values: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/CodableErrors.swiftconstvalues"
+  object: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/CodableErrors.o"
+  dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/CodableErrors.d"
+  swift-dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/CodableErrors.swiftdeps"
+"/Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/Codable/CodablePassThroughTypes.swift":
+  object: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/CodablePassThroughTypes.o"
+  const-values: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/CodablePassThroughTypes.swiftconstvalues"
+  swift-dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/CodablePassThroughTypes.swiftdeps"
+  diagnostics: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/CodablePassThroughTypes.dia"
+  dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/CodablePassThroughTypes.d"
+"/Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/AsyncAwait/CollectionReference+AsyncAwait.swift":
+  swift-dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/CollectionReference+AsyncAwait.swiftdeps"
+  diagnostics: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/CollectionReference+AsyncAwait.dia"
+  object: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/CollectionReference+AsyncAwait.o"
+  const-values: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/CollectionReference+AsyncAwait.swiftconstvalues"
+  dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/CollectionReference+AsyncAwait.d"

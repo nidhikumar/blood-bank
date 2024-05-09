@@ -1,0 +1,38 @@
+dependencies: \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/src/core/tsi/alts/crypt/gsec.cc \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/Target\ Support\ Files/gRPC-Core/gRPC-Core-prefix.pch \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/support/port_platform.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/src/core/tsi/alts/crypt/gsec.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/span.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/attributes.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/config.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/options.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/policy_checks.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/throw_delegate.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/macros.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/optimization.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/port.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/nullability.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/nullability_impl.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/meta/type_traits.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/internal/span.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/algorithm/algorithm.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/event_engine/port.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/grpc.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/byte_buffer.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/impl/grpc_types.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/impl/channel_arg_names.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/impl/compression_types.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/slice.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/impl/slice_type.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/support/sync.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/support/time.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/support/sync_generic.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/support/atm.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/support/atm_gcc_atomic.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/support/sync_posix.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/status.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/slice_buffer.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/impl/connectivity_state.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/impl/propagation_bits.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/gRPC-Core/include/grpc/support/alloc.h

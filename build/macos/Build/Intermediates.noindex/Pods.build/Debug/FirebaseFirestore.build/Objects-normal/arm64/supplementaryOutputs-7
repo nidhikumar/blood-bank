@@ -1,0 +1,18 @@
+"/Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/Codable/TimestampDecodingStrategy.swift":
+  diagnostics: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/TimestampDecodingStrategy.dia"
+  const-values: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/TimestampDecodingStrategy.swiftconstvalues"
+  swift-dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/TimestampDecodingStrategy.swiftdeps"
+  object: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/TimestampDecodingStrategy.o"
+  dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/TimestampDecodingStrategy.d"
+"/Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/SwiftHeaderWorkaround.swift":
+  swift-dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/SwiftHeaderWorkaround.swiftdeps"
+  diagnostics: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/SwiftHeaderWorkaround.dia"
+  object: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/SwiftHeaderWorkaround.o"
+  dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/SwiftHeaderWorkaround.d"
+  const-values: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/SwiftHeaderWorkaround.swiftconstvalues"
+"/Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/Codable/Timestamp+Codable.swift":
+  dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/Timestamp+Codable.d"
+  swift-dependencies: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/Timestamp+Codable.swiftdeps"
+  diagnostics: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/Timestamp+Codable.dia"
+  const-values: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/Timestamp+Codable.swiftconstvalues"
+  object: "/Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/arm64/Timestamp+Codable.o"
