@@ -14,8 +14,7 @@ class _HospitalAddEventsPageState extends State<HospitalAddEventsPage> {
   DateTime selectedDate = DateTime.now();
   TimeOfDay startTime = TimeOfDay.now();
   TimeOfDay endTime = TimeOfDay.now();
-  String? selectedCategory;
-  final List<String> categories=['Event', 'Emergency'];
+
 
   Future<void> _selectStartTime(BuildContext context) async {
     final TimeOfDay? pickedTime = await showTimePicker(
@@ -96,23 +95,6 @@ class _HospitalAddEventsPageState extends State<HospitalAddEventsPage> {
             TextField(
               controller: locationController,
               decoration: InputDecoration(labelText: 'Location'),
-            ),
-            SizedBox(height: 10),
-            DropdownButton<String>(
-                value: selectedCategory,
-                onChanged: (String? newValue) {
-                  setState(() {
-                    selectedCategory = newValue;
-                  });
-                },
-                hint: Text('Select Category'),
-                items: categories.map
-                  ( (String category) {
-                  return DropdownMenuItem<String>(
-                    value: category,
-                    child: Text(category),
-                  );
-                }).toList(),
             ),
             SizedBox(height: 10),
             GestureDetector(

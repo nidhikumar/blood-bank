@@ -1,16 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:intl/intl.dart';
+import 'eventdetailspage.dart';
 
 class DisplayEventsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // The current time, used to filter out past events
+    Timestamp now = Timestamp.fromDate(DateTime.now());
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Display Events'),
       ),
       body: StreamBuilder<QuerySnapshot>(
-        stream: FirebaseFirestore.instance.collection('hospitalEvents').snapshots(),
+        stream: FirebaseFirestore.instance
+            .collection('hospitalEvents')
+            .where('date', isGreaterThanOrEqualTo: now) // Only fetch future events
+            .snapshots(),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
           if (snapshot.hasError) {
             return Text('Something went wrong');
@@ -25,15 +32,8 @@ class DisplayEventsPage extends StatelessWidget {
             children: snapshot.data!.docs.map((DocumentSnapshot document) {
               Map<String, dynamic> data = document.data()! as Map<String, dynamic>;
 
-              DateTime eventDate;
-              if (data['date'] is String) {
-                eventDate = DateTime.parse(data['date'] as String);
-              } else if (data['date'] is Timestamp) {
-                eventDate = (data['date'] as Timestamp).toDate();
-              } else {
-                return SizedBox.shrink();
-              }
-
+              // Retrieve and format the event date
+              DateTime eventDate = data['date'] is Timestamp ? (data['date'] as Timestamp).toDate() : DateTime.parse(data['date']);
               String formattedDate = DateFormat('yyyy-MM-dd – kk:mm').format(eventDate);
 
               return Card(
@@ -44,6 +44,12 @@ class DisplayEventsPage extends StatelessWidget {
                   subtitle: Text(data['description'] ?? 'No Description'),
                   trailing: Text(formattedDate),
                   onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => EventDetailsPage(eventData: data),
+                      ),
+                    );
                   },
                 ),
               );
