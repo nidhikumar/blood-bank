@@ -2,6 +2,25 @@
 
 Team Members :
 Hari Krishnan Raj Kumar, Lakshmi KS, Nidhi Kumar, Shristi Shrivastava
+
+Please check Checkpoint 3 - Basic Functionality
+
+Screenshots of the updates ->
+
+The below image shows slider drawer for Hospitals. It differentiates from Donor's view of sloder drawer.
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/22.png" width="300">
+
+The below image shows the formatted Time and Date for events added by the hospital. 
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/21.png" width="300">
+
+The below image shows all the donor list. Previously, all the donors were not visible. With the recent update, when a donor signs up, it will automatically be shown in the hospital's donor list.
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/23.png" width="300">
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Please check Checkpoint 2 - Simple Prototype.pdf for List of features needed for the MVP + Breakdown of tasks & Mapping between features and value(s) to be delivered by your app (justification)
 
 The below screenshots show our UI / UX with data pulled from firebase, Navigation and event based actions:
