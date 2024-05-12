@@ -3,7 +3,8 @@
 Team Members :
 Hari Krishnan Raj Kumar, Lakshmi KS, Nidhi Kumar, Shristi Shrivastava
 
-Please check Checkpoint 3 - Basic Functionality
+Please check  BasicFunctionality.pdf for documentation questions, all screenshots are found below only.
+https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/BasicFunctionality.pdf
 Basic functionality implemented: 
 •	We have added the Blood donation functionality, This allows the hospital user to fill a form with required blood group, quantity required and description, which will be sent to the users. 
 •	We have added the Event creation functionality, where the hospital user can create an event by entering the event details which will be displayed for the users. 
