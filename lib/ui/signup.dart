@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:geolocator/geolocator.dart';
 
 enum AccountType { donor, hospital }
 
@@ -21,6 +22,27 @@ class _SignupPageState extends State<SignupPage> {
   final TextEditingController pinCodeController = TextEditingController();
 
   AccountType _selectedAccountType = AccountType.donor; // Default to donor
+
+  Future<Position> _determinePosition() async {
+    bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
+    if (!serviceEnabled) {
+      return Future.error('Location services are disabled.');
+    }
+
+    LocationPermission permission = await Geolocator.checkPermission();
+    if (permission == LocationPermission.denied) {
+      permission = await Geolocator.requestPermission();
+      if (permission == LocationPermission.denied) {
+        return Future.error('Location permissions are denied');
+      }
+    }
+
+    if (permission == LocationPermission.deniedForever) {
+      return Future.error('Location permissions are permanently denied');
+    }
+
+    return await Geolocator.getCurrentPosition();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -63,66 +85,62 @@ class _SignupPageState extends State<SignupPage> {
                 decoration: InputDecoration(labelText: 'Password'),
                 obscureText: true,
               ),
-              if (_selectedAccountType == AccountType.donor) // Show additional fields for donor signup
-                ...[
-                  SizedBox(height: 10),
-                  TextField(
-                    controller: nameController,
-                    decoration: InputDecoration(labelText: 'Name'),
-                  ),
-                  SizedBox(height: 10),
-                  TextField(
-                    controller: addressController,
-                    decoration: InputDecoration(labelText: 'Address'),
-                  ),
-                  SizedBox(height: 10),
-                  TextField(
-                    controller: ageController,
-                    decoration: InputDecoration(labelText: 'Age'),
-                    keyboardType: TextInputType.number,
-                  ),
-                  SizedBox(height: 10),
-                  TextField(
-                    controller: bloodGroupController,
-                    decoration: InputDecoration(labelText: 'Blood Group'),
-                  ),
-                ],
+              if (_selectedAccountType == AccountType.donor) ...[
+                SizedBox(height: 10),
+                TextField(
+                  controller: nameController,
+                  decoration: InputDecoration(labelText: 'Name'),
+                ),
+                SizedBox(height: 10),
+                TextField(
+                  controller: addressController,
+                  decoration: InputDecoration(labelText: 'Address'),
+                ),
+                SizedBox(height: 10),
+                TextField(
+                  controller: ageController,
+                  decoration: InputDecoration(labelText: 'Age'),
+                  keyboardType: TextInputType.number,
+                ),
+                SizedBox(height: 10),
+                TextField(
+                  controller: bloodGroupController,
+                  decoration: InputDecoration(labelText: 'Blood Group'),
+                ),
+              ],
               SizedBox(height: 10),
               TextField(
                 controller: phoneNumberController,
                 decoration: InputDecoration(labelText: 'Phone Number'),
                 keyboardType: TextInputType.phone,
               ),
-              if (_selectedAccountType == AccountType.hospital) // Show additional fields for hospital signup
-                ...[
-                  SizedBox(height: 10),
-                  TextField(
-                    controller: hospitalNameController,
-                    decoration: InputDecoration(labelText: 'Hospital Name'),
-                  ),
-                  SizedBox(height: 10),
-                  TextField(
-                    controller: addressController,
-                    decoration: InputDecoration(labelText: 'Address'),
-                  ),
-                  SizedBox(height: 10),
-                  TextField(
-                    controller: pinCodeController,
-                    decoration: InputDecoration(labelText: 'Pin Code'),
-                  ),
-                ],
+              if (_selectedAccountType == AccountType.hospital) ...[
+                SizedBox(height: 10),
+                TextField(
+                  controller: hospitalNameController,
+                  decoration: InputDecoration(labelText: 'Hospital Name'),
+                ),
+                SizedBox(height: 10),
+                TextField(
+                  controller: addressController,
+                  decoration: InputDecoration(labelText: 'Address'),
+                ),
+                SizedBox(height: 10),
+                TextField(
+                  controller: pinCodeController,
+                  decoration: InputDecoration(labelText: 'Pin Code'),
+                ),
+              ],
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () async {
                   try {
                     if (_selectedAccountType == AccountType.donor) {
-                      // Implement donor signup logic
                       await FirebaseAuth.instance.createUserWithEmailAndPassword(
                         email: emailController.text,
                         password: passwordController.text,
                       );
 
-                      // Save donor info to Firestore
                       await FirebaseFirestore.instance.collection('donor_list').add({
                         'email': emailController.text,
                         'name': nameController.text,
@@ -132,25 +150,24 @@ class _SignupPageState extends State<SignupPage> {
                         'address': addressController.text,
                       });
 
-                      // Navigate to login page after successful signup
                       Navigator.pop(context);
                     } else {
-                      // Implement hospital signup logic
-                      await FirebaseAuth.instance.createUserWithEmailAndPassword(
+                      UserCredential user = await FirebaseAuth.instance.createUserWithEmailAndPassword(
                         email: emailController.text,
                         password: passwordController.text,
                       );
 
-                      // Save hospital info to Firestore
-                      await FirebaseFirestore.instance.collection('hospital_info').add({
+                      Position position = await _determinePosition();
+
+                      await FirebaseFirestore.instance.collection('hospital_info').doc(user.user!.uid).set({
                         'email': emailController.text,
                         'phone_number': phoneNumberController.text,
                         'hospital_name': hospitalNameController.text,
                         'address': addressController.text,
                         'pin_code': pinCodeController.text,
+                        'location': GeoPoint(position.latitude, position.longitude),
                       });
 
-                      // Navigate to login page after successful signup
                       Navigator.pop(context);
                     }
                   } catch (e) {
