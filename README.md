@@ -8,6 +8,7 @@ https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/BasicFunctionality.pd
 
 
 Basic functionality implemented:
+
 •	We have added the Blood donation functionality, This allows the hospital user to fill a form with required blood group, quantity required and description, which will be sent to the users.
 •	We have added the Event creation functionality, where the hospital user can create an event by entering the event details which will be displayed for the users.
 •	We have added the nearby hospitals functionality which helps the users filter nearby hospitals, this is done using the lat long calculation where we have developed an algorithm to find the closest ones to a particular latitude - longitude.
