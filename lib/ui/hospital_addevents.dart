@@ -15,7 +15,7 @@ class _HospitalAddEventsPageState extends State<HospitalAddEventsPage> {
   TimeOfDay startTime = TimeOfDay.now();
   TimeOfDay endTime = TimeOfDay.now();
   String? selectedCategory;
-  final List<String> categories=['Event', 'Emergency'];
+  final List<String> categories = ['Event', 'Emergency'];
 
   Future<void> _selectStartTime(BuildContext context) async {
     final TimeOfDay? pickedTime = await showTimePicker(
@@ -106,8 +106,7 @@ class _HospitalAddEventsPageState extends State<HospitalAddEventsPage> {
                 });
               },
               hint: Text('Select Category'),
-              items: categories.map
-                ( (String category) {
+              items: categories.map((String category) {
                 return DropdownMenuItem<String>(
                   value: category,
                   child: Text(category),
@@ -169,7 +168,6 @@ class _HospitalAddEventsPageState extends State<HospitalAddEventsPage> {
                   addEventToFirestore(); // Call the function to save data to Firestore
                 }
               },
-
               child: Text('Add Event'),
             ),
           ],

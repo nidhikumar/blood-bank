@@ -64,15 +64,15 @@ class WelcomePage extends StatelessWidget {
                 );
               },
             ),
-            ListTile(
-              title: Text('Add Hospital Events'),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => HospitalAddEventsPage()),
-                );
-              },
-            ),
+            // ListTile(
+            //   title: Text('Add Hospital Events'),
+            //   onTap: () {
+            //     Navigator.push(
+            //       context,
+            //       MaterialPageRoute(builder: (context) => HospitalAddEventsPage()),
+            //     );
+            //   },
+            // ),
             ListTile(
               title: Text('Hospital Events'),
               onTap: () {
