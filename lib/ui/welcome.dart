@@ -1,5 +1,6 @@
 // welcome.dart
 
+import 'package:blood_bank/ui/donorHomePage.dart';
 import 'package:blood_bank/ui/previousDonations.dart';
 import 'package:blood_bank/ui/statsAndFacts.dart';
 import 'package:blood_bank/ui/updateProfile.dart';
@@ -12,6 +13,9 @@ import 'displayevents.dart';
 import 'nearbyHospitals.dart'; // Import DisplayEventsPage
 
 class WelcomePage extends StatelessWidget {
+  String donorBloodGroup;
+
+  WelcomePage({required this.donorBloodGroup});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -112,7 +116,7 @@ class WelcomePage extends StatelessWidget {
           ],
         ),
       ),
-      body: DisplayEventsPage(), // Display DisplayEventsPage as the body
+      body: DonorHomePage(donorBloodGroup:donorBloodGroup), // Display DisplayEventsPage as the body
     );
   }
 }

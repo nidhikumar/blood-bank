@@ -6,7 +6,7 @@
 	<dict>
 		<key>GoogleUtilities_Privacy.bundle/Info.plist</key>
 		<data>
-		j6HP9vBIU6nGUYtYt4ImKn+nctI=
+		trRw5OUlRbBvcgiBmI53bo92YdM=
 		</data>
 		<key>GoogleUtilities_Privacy.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cmDxXQ6Qlb94GPR8yceNrTQJfPY=
+		3dJtHGkUhEGf+qIkQAkFDFnc6jE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -123,11 +123,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j6HP9vBIU6nGUYtYt4ImKn+nctI=
+			trRw5OUlRbBvcgiBmI53bo92YdM=
 			</data>
 			<key>hash2</key>
 			<data>
-			mI8IBHtihUlfQQ4fXN6ryA9vhlcq2jx6pGuaIWgHGdQ=
+			UUj3KSDzauynHk3rMdWdkc1w+Xv5L8UsbpgxHIFrfGA=
 			</data>
 		</dict>
 		<key>GoogleUtilities_Privacy.bundle/PrivacyInfo.xcprivacy</key>

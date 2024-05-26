@@ -42,12 +42,24 @@ class DonorLoginPage extends StatelessWidget {
                     );
 
                     // Check if the logged-in user is a donor
-                    QuerySnapshot donorData = await FirebaseFirestore.instance.collection('donor_list').where('email', isEqualTo: emailController.text).get();
+                    QuerySnapshot donorData = await FirebaseFirestore.instance
+                        .collection('donor_list')
+                        .where('email', isEqualTo: emailController.text)
+                        .get();
 
                     if (donorData.docs.isNotEmpty) {
+                      // Access the first document in the snapshot
+                      var donorDoc = donorData.docs.first;
+
+                      // Extract the bloodGroup field
+                      final String bloodGroup = donorDoc['bloodGroup'];
+
+                      // Navigate to the WelcomePage with the bloodGroup
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (context) => WelcomePage()),
+                        MaterialPageRoute(
+                          builder: (context) => WelcomePage(donorBloodGroup: bloodGroup),
+                        ),
                       );
                     } else {
                       showDialog(
