@@ -3,6 +3,21 @@
 Team Members :
 Hari Krishnan Raj Kumar, Lakshmi KS, Nidhi Kumar, Shristi Shrivastava
 
+Final submission doc link:
+
+https://docs.google.com/document/d/1gYVl1pcUTQFg1jjtmmXwkEha0yG38U8EvxtjkdB6qg4/edit
+
+Final sprint features:
+
+Adding live feed for blood requests coming from blood banks - displayed in donor's homepage:
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/28.png" width="300">
+
+Adding age validations in sign up:
+
+<img src="https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/screenshots/29.png" width="300">
+
+
 Please check  BasicFunctionality.pdf for documentation questions, all screenshots are found below only.
 https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/BasicFunctionality.pdf
 
