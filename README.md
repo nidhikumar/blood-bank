@@ -1,11 +1,129 @@
 # blood_bank
 
 Team Members :
-Hari Krishnan Raj Kumar, Lakshmi KS, Nidhi Kumar, Shristi Shrivastava
+Hari Krishnan Raj Kumar, Lakshmi KS, Nidhi Kumar, Shristi Srivastava
 
 Final submission doc link:
 
 https://github.com/nidhikumar/blood-bank/blob/branch-nidhi/FinalDoc.pdf
+Please download the pdf file for better viewing experience.
+
+1) Does it accomplish the stated objective?
+   
+The main objective of the project is to create a community based blood bank application that
+connects donors and hospitals seamlessly. This objective is met through the implementation of
+several key functionalities as listed below.
+1. Blood Donation Requests: Hospitals could fill out forms specifying the required blood group,
+quantity, and description. This information is sent to users, notifying potential donors about the need.
+This comes in handy during emergency situations.
+2. Event Creation: Hospitals can create events which will then be displayed to donors thus
+engaging the community and organizing blood donation drives.
+3. Nearby Hospitals: Users can find hospitals within a 5-mile radius using latitude longitude
+calculations. It's a simple algorithm that we developed, ensuring that users can locate nearby
+hospitals quickly.
+4. Google Maps Integration: Users can open Google Maps with a hospital's address, which helps
+in easy navigation. This happens through the click of a button.
+5. Donor List: Hospitals have access to a list of donors, which is updated automatically as new
+donors sign up.
+6. Role-based UI and Functions: Different user interfaces and functionalities are provided for
+donors and hospitals, thus differentiating based on access controls.
+7. Secure Authentication: Passwords are encrypted using Firebase's standard encryption method,
+ensuring user security.
+These features collectively contribute to achieving the goal of facilitating quick and efficient
+communication between donors and hospitals, particularly in emergency situations.
+Please note that we were not able to implement email notifications as all the providers are paid, thus
+we added a live feed in the app which will have all new blood request notifications. If this product
+were to be launched, we could add a paid email service or also push notifications in the app.
+
+
+2) Does it deliver on the “value proposition”?
+
+The value proposition of the application lies in addressing the decline in blood donations by
+enhancing local community engagement and enabling real-time communication between hospitals
+and potential donors. The implemented features deliver on this proposition:
+1. Real-time Notifications: When a blood donation request is made, notifications are sent to users,
+ensuring timely awareness and response. In our current implementation it all be shown in the live
+feed in the home page.
+2. Local Engagement: By displaying nearby hospitals and creating community events, the app
+fosters local involvement and encourages people to participate in blood donation drives.
+3. Efficient Communication: Hospitals can reach out to a broad audience quickly through the app,
+ensuring that emergency blood needs are communicated effectively.
+4. Accessibility: The user-friendly design and the integration with Google Maps make it easy for
+users to navigate and respond to requests.
+The combination of these functionalities ensures that the app is not only useful for hospitals but also
+beneficial for the general public, thus delivering on its value proposition of enhancing blood donation
+rates and improving emergency response.
+
+3) Does it respect user privacy/is it secure?
+User privacy and security are critical aspects of this application, and the project addresses these
+effectively:
+1. Password Encryption: Passwords are encrypted using Firebase’s standard encryption methods,
+which ensures that user credentials are stored securely.
+2. Authentication: The app uses Firebase Authentication for secure login and session
+management, protecting user data and preventing unauthorized access.
+3. Data Handling: User data, including personal information and location data, is handled securely,
+adhering to best practices in data privacy.
+4. Role-based Access Control: Different functionalities are provided based on user roles (donor or
+hospital), ensuring that sensitive operations are restricted to authorized users.
+These measures collectively ensure that the application respects user privacy and maintains high
+security standards.
+
+4) Does it have proper app lifecycle/state management?
+The app demonstrates proper lifecycle and state management through several key practices:
+1. Stateful Widgets: The use of stateful widgets ensures that the UI can respond dynamically to
+changes in the application state.
+2. Lifecycle Methods: Methods like ‘onCreate()’, ‘onStart()’, ‘onResume()’, and ‘onPause()’ are
+used effectively to manage the app's lifecycle, ensuring that the app behaves correctly in response
+to different states and user interactions.
+3. State Mutation and setState(): The ‘setState()’ method is used to handle state changes and
+update the UI. For example, when a user interacts with a text field or makes a donation, ‘setState()’
+ensures that the UI reflects the new state.
+4. TextEditingController: This handles the state of text input fields, ensuring that the app can
+manage user input and validation effectively.
+These practices ensure that the app provides a smooth and responsive user experience, handling
+state changes and lifecycle events efficiently.
+
+
+5) Does it address at least three additional challenges (other than privacy and
+state management) unique to mobile app development?
+The project addresses several additional challenges unique to mobile app development:
+1. Scalability and Performance:
+- Database Optimization: Efficient database queries and the use of caching mechanisms ensure
+that the app performs well, even under high load. We have done these in our database setup in
+firebase.
+2. Geolocation and Mapping::
+- Google Maps Integration: The app uses Google Maps to provide location-based services,
+helping users find nearby hospitals and navigate to them easily.
+- Lat-Long Calculation: An algorithm calculates the distance between the user and hospitals,
+ensuring accurate results within a 5-mile radius.
+3. User Adoption and Engagement:
+- Notifications: Push notifications and emails keep users engaged and informed about urgent
+blood donation needs and upcoming events.In our current implementation it all be shown in the live
+feed in the home page.
+- User-Friendly Design: The intuitive design and clear navigation enhance the user experience,
+encouraging regular use and engagement.
+4. Input Validation:
+- Regex Validation: Input validations using regex ensure that user inputs are correct and prevent
+errors.
+- Age Validation: Specific validations for donor eligibility (example: minimum age of 18) ensure
+compliance with donation guidelines.
+By addressing these challenges, the app ensures reliability, ease of use, and robust performance,
+making it a comprehensive solution for the intended purpose.
+
+6) Does it have a good user experience?
+The project provides a good user experience through several design and functionality choices:
+1. Intuitive Interface: The app’s interface is designed to be user-friendly, with clear navigation and
+well-organized information. Users can easily sign up, log in, find nearby hospitals, and respond to
+blood donation requests.
+2. Role-Based Views: Different views and functionalities for donors and hospitals ensure that users
+see only relevant information and options, making the app easier to use.
+3. Visual Feedback: Screenshots in our github readme demonstrate that the app provides visual
+feedback to users, such as showing formatted time and date for events, lists of donors, and details
+of events.
+4. Accessibility: The integration with Google Maps and clear navigation options enhance the
+accessibility of the app, making it easy for users to find and reach hospitals.
+Based on the above features and with feedback from our testers as listed in checkpoint 4, we
+believe our applications provide a good user experience.
 
 Final sprint features:
 
