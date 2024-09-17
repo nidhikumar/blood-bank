@@ -1,0 +1,42 @@
+dependencies: \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseAuth.build/module.modulemap \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/SystemService/FIRSecureTokenService.m \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/SystemService/FIRSecureTokenService.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuth.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthAPNSTokenType.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthErrors.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Auth/FIRAuthSerialTaskQueue.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Auth/FIRAuthTokenResult_Internal.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FirebaseAuth/FIRAuthTokenResult.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Auth/FIRAuth_Internal.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Interop/FIRAuthInterop.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/FIRAuthBackend.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/FIRAuthRPCRequest.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/FIRAuthRPCResponse.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRLogger.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseCore.build/module.modulemap \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRApp.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRConfiguration.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRLoggerLevel.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FirebaseCore.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIROptions.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRVersion.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/FIRAuthRequestConfiguration.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseAppCheckInterop.build/module.modulemap \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/Target\ Support\ Files/FirebaseAppCheckInterop/FirebaseAppCheckInterop-umbrella.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAppCheckInterop/FirebaseAppCheck/Interop/Public/FirebaseAppCheckInterop/FIRAppCheckInterop.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAppCheckInterop/FirebaseAppCheck/Interop/Public/FirebaseAppCheckInterop/FIRAppCheckProtocol.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAppCheckInterop/FirebaseAppCheck/Interop/Public/FirebaseAppCheckInterop/FIRAppCheckTokenResultInterop.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAppCheckInterop/FirebaseAppCheck/Interop/Public/FirebaseAppCheckInterop/FirebaseAppCheckInterop.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/RPC/FIRSecureTokenRequest.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/RPC/FIRSecureTokenResponse.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FirebaseCoreInternal.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRAppInternal.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRComponent.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRComponentContainer.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRComponentType.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRDependency.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRHeartbeatLogger.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIRLibrary.h \
+  /Users/lakshmiks/Downloads/test/blood-bank/macos/Pods/FirebaseAuth/FirebaseCore/Extension/FIROptionsInternal.h
